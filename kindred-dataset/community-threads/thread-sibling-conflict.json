@@ -1,0 +1,125 @@
+{
+  "thread_id": "thread-sibling-conflict",
+  "space_id": "caregiving-support",
+  "space_name": "Caregiving Support",
+  "title": "My brother and I can't agree on anything about mom's care",
+  "url": "https://kindred.app/community/thread-sibling-conflict",
+  "created_at": "2026-01-08T18:23:00Z",
+  "status": "published",
+  "post_count": 8,
+  "like_count": 81,
+  "posts": [
+    {
+      "post_id": "post-sc-001",
+      "author": {
+        "id": "user-sister-we",
+        "handle": "SisterAtWitsEnd",
+        "name": "Rebecca T.",
+        "role": "member",
+        "joined": "2025-11-05"
+      },
+      "created_at": "2026-01-08T18:23:00Z",
+      "is_original_post": true,
+      "like_count": 16,
+      "body": "My brother and I haven't spoken in two weeks except to fight about Mom. I'm sitting here at 6pm still shaking from our last call.\n\nHe lives three hours away. He shows up maybe once a month, stays for an afternoon, and then leaves. I'm the one here every day—managing her medications, taking her to appointments (3 this week alone), handling the 2am falls, watching her decline.\n\nHe has opinions about EVERYTHING. Today's fight: I said we need to start looking at assisted living. Mom's needs are beyond what I can safely provide at home. Last month she fell twice when I wasn't there. I'm not sleeping. I'm not eating right. My own health is suffering.\n\nHis response? \"We promised we'd never put her in a home.\" I made no such promise. He might have, in his head, from 200 miles away. Easy to make promises when you're not the one living this.\n\nHe called me \"selfish\" and said I was \"abandoning\" her. Our mother. Who I've been caring for for two years while he's been living his life.\n\nI love him. We used to be close. But I don't know how to have a relationship with someone who judges me from a distance while doing nothing."
+    },
+    {
+      "post_id": "post-sc-002",
+      "author": {
+        "id": "user-mediator-m",
+        "handle": "MediatorMike",
+        "name": "Mike D.",
+        "role": "member",
+        "joined": "2024-05-28"
+      },
+      "created_at": "2026-01-08T20:15:00Z",
+      "is_original_post": false,
+      "like_count": 17,
+      "body": "Rebecca, I've been exactly where you are. My sister and I nearly stopped speaking over our dad's care. It took almost a year to repair.\n\nWhat finally helped us:\n\nFirst, I laid out the actual facts in writing. Hours of care per week. Number of incidents. Impact on my health. She genuinely didn't know. She lived far away and I'd been making it look manageable when it wasn't.\n\nSecond, we hired a geriatric care manager to do a professional assessment. When an objective third party said \"he needs this level of care,\" it was different from me saying it. Less emotional. Harder to dismiss.\n\nThird—and this was the hardest part—we had to separate \"what's best for Mom\" from \"what makes us feel less guilty.\" Sometimes keeping someone home is about our feelings, not their actual wellbeing.\n\nI'm not saying any of this is easy. I'm just saying it's possible to come through it."
+    },
+    {
+      "post_id": "post-sc-003",
+      "author": {
+        "id": "user-joanne-cg",
+        "handle": "JoanneCaregiver2025",
+        "name": "Joanne M.",
+        "role": "member",
+        "joined": "2025-02-14"
+      },
+      "created_at": "2026-01-08T21:19:00Z",
+      "is_original_post": false,
+      "like_count": 13,
+      "body": "The resentment you're feeling is so common among primary caregivers. You're doing the work while he gets to have opinions from a safe distance. Of course you're angry.\n\nOne thing that shifted conversations in my family: we stopped talking about feelings and started talking about facts. When my brother said \"Mom should stay home,\" I asked: \"Great. What portion of that care are you able to provide?\"\n\nIf the answer is \"none,\" he doesn't get to veto the option that would actually help.\n\nI know it's hard. But your wellbeing matters too. You can't care for your mom if you collapse."
+    },
+    {
+      "post_id": "post-sc-004",
+      "author": {
+        "id": "user-sister-we",
+        "handle": "SisterAtWitsEnd",
+        "name": "Rebecca T.",
+        "role": "member",
+        "joined": "2025-11-05"
+      },
+      "created_at": "2026-01-08T22:02:00Z",
+      "is_original_post": false,
+      "like_count": 9,
+      "body": "Thank you both.\n\nMike, the geriatric care manager idea is interesting. Having someone professional assess the situation might take some of the personal charge out of it. He can dismiss me but maybe not an expert.\n\nJoanne, \"What portion of the care are you able to provide?\" is the perfect question. Because the answer is none. Zero. He can't take time off work, he can't relocate, he can't do any of it. And yet he wants to control the decision.\n\nI'm going to try writing out the actual numbers. Maybe seeing it in black and white will be different from hearing it from me in the middle of an argument.\n\nI just want my brother back. Before all this, we were friends. Now every conversation is a battle."
+    },
+    {
+      "post_id": "post-sc-005",
+      "author": {
+        "id": "user-richard-bc",
+        "handle": "RichardBrotherCaregiver",
+        "name": "Richard H.",
+        "role": "member",
+        "joined": "2024-09-10"
+      },
+      "created_at": "2026-01-09T09:34:00Z",
+      "is_original_post": false,
+      "like_count": 14,
+      "body": "I want to offer a different perspective. I was the brother who lived far away and had all the opinions.\n\nMy sister finally sat me down and told me—really told me—how my behavior was affecting her. Not during a fight, but a planned conversation. She showed me her calendar, her medication tracking sheets, the incident logs. I was ashamed. I genuinely hadn't understood.\n\nI wasn't trying to be an ass. I was dealing with my own guilt and fear about our parents declining. It came out as trying to control things from afar, because I felt powerless.\n\nIf your brother is a fundamentally decent person, a very direct conversation might help. Not \"you're not doing enough\" but \"I need you to understand what I'm dealing with. I need you to either step up or support my decisions. This isn't sustainable.\"\n\nSome brothers will step up when they truly understand. Some won't. But at least you'll know."
+    },
+    {
+      "post_id": "post-sc-006",
+      "author": {
+        "id": "user-sister-we",
+        "handle": "SisterAtWitsEnd",
+        "name": "Rebecca T.",
+        "role": "member",
+        "joined": "2025-11-05"
+      },
+      "created_at": "2026-01-10T19:45:00Z",
+      "is_original_post": false,
+      "like_count": 11,
+      "body": "Update: I reached out to my brother and asked if he could come stay for a full week and take over primary care. Not to punish him—to let him experience what I'm actually dealing with.\n\nHe said yes. Reluctantly, but yes. He'll come next month.\n\nI'm not sure what will happen. Maybe he'll understand after living it. Maybe he'll just be critical of how I do things. Maybe he's more capable than I think and this will show me I could ask him for more.\n\nEither way, we'll have actual information instead of just fighting over hypotheticals."
+    },
+    {
+      "post_id": "post-sc-007",
+      "author": {
+        "id": "user-mediator-m",
+        "handle": "MediatorMike",
+        "name": "Mike D.",
+        "role": "member",
+        "joined": "2024-05-28"
+      },
+      "created_at": "2026-01-10T21:30:00Z",
+      "is_original_post": false,
+      "like_count": 8,
+      "body": "That's a brave move, Rebecca. A week in your shoes will give him information he can't get any other way.\n\nMake sure you actually leave. Go visit a friend, stay somewhere else. If you're there hovering and correcting, he won't get the real experience and you won't get a real break.\n\nLet us know how it goes. Hoping for the best."
+    },
+    {
+      "post_id": "post-sc-008",
+      "author": {
+        "id": "user-sister-we",
+        "handle": "SisterAtWitsEnd",
+        "name": "Rebecca T.",
+        "role": "member",
+        "joined": "2025-11-05"
+      },
+      "created_at": "2026-02-15T14:22:00Z",
+      "is_original_post": false,
+      "like_count": 18,
+      "body": "Final update: The week happened.\n\nMy brother lasted four days before calling me. Not angry—exhausted. He said \"I had no idea\" so many times. By day three he understood why I was talking about assisted living. By day four he was researching facilities himself.\n\nWe're not magically fixed. He still lives far away. He still can't help day-to-day. But he stopped fighting me on every decision. He's agreed to contribute more financially so I can hire some help. And he apologized—really apologized—for calling me selfish.\n\nWe're planning to visit some assisted living places together next month. As a team instead of adversaries.\n\nI got my brother back. Or at least the start of getting him back. Thank you all for the advice and for listening when I needed to vent."
+    }
+  ]
+}

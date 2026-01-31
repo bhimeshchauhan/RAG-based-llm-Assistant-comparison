@@ -1,0 +1,30 @@
+{
+  "name": "Sample Caregiver Questions",
+  "description": "Example question set for testing the RAG comparison tool. Replace with your curated evaluation questions.",
+  "questions": [
+    "What are the early warning signs I should look for?",
+    {
+      "id": "daily-care",
+      "text": "How can I make daily care routines easier?",
+      "followups": [
+        "What about morning routines specifically?",
+        "Any tips for bedtime routines?"
+      ]
+    },
+    {
+      "id": "communication",
+      "text": "How should I communicate when they're confused?",
+      "followups": [
+        "What phrases should I avoid?"
+      ]
+    },
+    "What self-care practices do you recommend for caregivers?",
+    {
+      "id": "resources",
+      "text": "What support resources are available in my area?",
+      "followups": [
+        "How do I find a local support group?"
+      ]
+    }
+  ]
+}

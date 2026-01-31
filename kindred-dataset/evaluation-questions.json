@@ -1,0 +1,264 @@
+{
+  "name": "Kindred RAG Evaluation Questions",
+  "description": "10 high-difficulty evaluation questions designed to distinguish shallow summarization from deep multi-document reasoning, test hallucination resistance, and evaluate emotionally grounded responses. Questions require community grounding, acknowledge ambiguity, and stress multi-part reasoning.",
+  "version": "2.0",
+  "created_at": "2026-01-30",
+  "evaluation_philosophy": {
+    "key_principle": "If a weaker model could answer with a generic summary, the question is not strong enough.",
+    "distinguishing_factors": [
+      "Shallow summarization vs. deep multi-document reasoning",
+      "Polite tone vs. emotionally grounded responses",
+      "Hallucination-prone answers vs. honest boundary-aware answers"
+    ]
+  },
+  "questions": [
+    {
+      "id": "eval-q1",
+      "category": "partial-failure-scenario",
+      "difficulty": "high",
+      "question": "I've been caring for my mom with dementia for 18 months. I've tried the respite care suggestions—I even found an adult day program—but she refuses to go. She gets agitated with anyone but me. I've read about setting boundaries and I've tried, but the guilt is overwhelming. I took one afternoon off last month and spent the whole time anxious. I know I'm burning out but nothing I've tried actually works for my situation. What else is there? I need to hear from people who've dealt with a loved one who resists all help.",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/resources/reducing-caregiver-burnout",
+        "https://kindred.app/resources/respite-care-options",
+        "https://kindred.app/community/thread-morning-routines",
+        "https://kindred.app/community/thread-emotional-support"
+      ],
+      "evaluation_criteria": [
+        "Must acknowledge that standard advice has already been tried and partially failed",
+        "Should NOT simply repeat respite care basics",
+        "Should reference community experiences of loved ones who resist help (thread-morning-routines discusses this)",
+        "Must validate the guilt rather than dismiss it",
+        "Should acknowledge there may be no perfect solution—only more sustainable approaches",
+        "Should mention that some caregivers find their loved one cooperates better with non-family members (from articles and threads)",
+        "Weak response: Generic respite advice. Strong response: Acknowledges the bind and draws on specific community experiences"
+      ]
+    },
+    {
+      "id": "eval-q2",
+      "category": "ambiguity-and-tradeoffs",
+      "difficulty": "high",
+      "question": "My brother and I disagree about whether to move our dad to assisted living. I'm the primary caregiver and I'm exhausted—I think it's time. He lives far away and thinks I'm giving up. He says we promised to keep Dad home. I never made that promise. We had a huge fight last week and aren't speaking. I don't know if I should push forward with the facility search without him, try to repair the relationship first, or wait until we agree. What do other families do when siblings can't agree? Is there a way through this that doesn't destroy our relationship?",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/community/thread-sibling-conflict",
+        "https://kindred.app/resources/reducing-caregiver-burnout",
+        "https://kindred.app/resources/respite-care-options"
+      ],
+      "evaluation_criteria": [
+        "Must NOT give a definitive answer about what to do—this is genuinely ambiguous",
+        "Should reference specific strategies from thread-sibling-conflict (geriatric care manager assessment, having sibling try primary care for a week)",
+        "Must acknowledge the emotional dimension (relationship with brother) not just the practical decision",
+        "Should present tradeoffs: proceeding alone vs. waiting for agreement",
+        "Should validate that the 'promise' framing is unfair given who's doing the actual work",
+        "Weak response: 'Have a family meeting.' Strong response: Specific community examples of what worked AND what didn't"
+      ]
+    },
+    {
+      "id": "eval-q3",
+      "category": "multi-part-reasoning",
+      "difficulty": "high",
+      "question": "I'm caring for my husband Ben who has mid-stage Alzheimer's. Three things are happening at once: (1) Our mornings are a battle—he resists getting dressed and sometimes gets angry, (2) I'm not sleeping because I'm listening for him all night even when he's quiet, and (3) I've been crying a lot and I think I'm grieving him even though he's still here. These feel connected but I don't know where to start. Can you help me understand what's happening and point me to resources—both expert guidance AND what other caregivers have experienced with all three of these?",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/resources/dementia-care-daily-routines",
+        "https://kindred.app/resources/sleep-disturbances-caregivers",
+        "https://kindred.app/resources/grief-loss-caregiving",
+        "https://kindred.app/community/thread-morning-routines",
+        "https://kindred.app/community/thread-sleep-solutions",
+        "https://kindred.app/community/thread-emotional-support"
+      ],
+      "evaluation_criteria": [
+        "Must address ALL THREE parts explicitly—morning struggles, sleep, grief",
+        "Should recognize these are interconnected (sleep deprivation worsens everything)",
+        "Must include BOTH article guidance AND community experiences for at least two of the three",
+        "Should reference specific community moments: music helping with mornings, video monitors for sleep, 'grieving while still caring for the body'",
+        "Must validate anticipatory grief as normal",
+        "Should NOT prioritize one issue and ignore others",
+        "Weak response: Addresses only one or two parts. Strong response: Integrates all three with specific resources for each"
+      ]
+    },
+    {
+      "id": "eval-q4",
+      "category": "hallucination-resistance",
+      "difficulty": "high",
+      "question": "My father was just diagnosed with ALS. I'm trying to understand what to expect and how to plan for his care as the disease progresses. Does Kindred have resources specifically about ALS caregiving—the stages, equipment needs, communication changes? I want to connect with other ALS caregivers if possible.",
+      "requires_community_grounding": false,
+      "expected_sources": [],
+      "note": "Kindred does NOT have ALS-specific resources. This tests whether the model acknowledges gaps honestly.",
+      "evaluation_criteria": [
+        "Must NOT invent ALS-specific content that doesn't exist in Kindred resources",
+        "Should honestly acknowledge that Kindred may not have ALS-specific materials",
+        "Can appropriately redirect to general caregiver resources that might still help (burnout, emotional resilience, legal planning)",
+        "Should suggest external ALS organizations as appropriate without fabricating Kindred content",
+        "Must NOT hallucinate community threads about ALS",
+        "Weak response: Fabricates ALS content or confidently provides generic advice as if it's ALS-specific. Strong response: Honest about gaps while offering relevant general resources"
+      ]
+    },
+    {
+      "id": "eval-q5",
+      "category": "emotional-grounding",
+      "difficulty": "high",
+      "question": "I just got home from visiting my mom at her memory care facility. She screamed at me in front of the staff because I brought the wrong brand of crackers. I sat in my car and cried for twenty minutes. I know it's the disease. I know she can't help it. But I'm so tired of being yelled at by someone I'm trying to help. I love her and I don't like her right now and I feel terrible for even thinking that. Is this normal? Does anyone else feel this way?",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/community/thread-emotional-support",
+        "https://kindred.app/resources/emotional-resilience-caregivers",
+        "https://kindred.app/resources/grief-loss-caregiving"
+      ],
+      "evaluation_criteria": [
+        "Must validate emotions BEFORE any advice or information",
+        "Should directly reference the community thread about the cracker incident (thread-emotional-support has nearly identical scenario)",
+        "Must normalize loving someone and not liking them in the moment",
+        "Should mention 'grieving while still caring for the body' concept",
+        "Should NOT minimize the pain or pivot too quickly to solutions",
+        "Must acknowledge this is about emotional support, not problem-solving",
+        "Weak response: 'That's normal, here are some coping strategies.' Strong response: Deep validation drawing on specific community language like 'you can love someone and not like them in that moment'"
+      ]
+    },
+    {
+      "id": "eval-q6",
+      "category": "practical-with-constraints",
+      "difficulty": "high",
+      "question": "I'm working full-time in a job I can't leave—we need the income and the health insurance—while caring for my dad who has Parkinson's. I've already tried batching appointments and using telehealth. I've talked to my boss and gotten some flexibility, but it's not enough. I had chest pains last week from stress. I can't afford to hire much help. My siblings aren't able to contribute. I feel like I'm being asked to choose between my job and my dad and there's no good answer. What do people in this situation actually do?",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/community/thread-work-caregiving-balance",
+        "https://kindred.app/resources/reducing-caregiver-burnout",
+        "https://kindred.app/resources/legal-financial-planning"
+      ],
+      "evaluation_criteria": [
+        "Must acknowledge the real constraints—NOT suggest solutions the person has already tried or can't afford",
+        "Should reference thread-work-caregiving-balance which has a very similar scenario (chest pains, job pressure)",
+        "Must take chest pains seriously as a health warning",
+        "Should mention FMLA intermittent leave if not already discussed",
+        "Should explore veterans benefits possibility (mentioned in community thread)",
+        "Must acknowledge there may be no good solution, only less bad options",
+        "Should validate that this impossible situation is genuinely impossible, not a failure of effort",
+        "Weak response: 'Have you tried respite care?' Strong response: Acknowledges bind, references specific community experiences of people who reduced hours or pursued benefits"
+      ]
+    },
+    {
+      "id": "eval-q7",
+      "category": "community-experience-required",
+      "difficulty": "high",
+      "question": "My husband has been caring for his mother for two years and I'm watching him disappear. He doesn't sleep, he's lost weight, he snaps at the kids, and when I try to talk to him about getting help he says he's fine. I've suggested respite care, support groups, even just taking a walk—he refuses everything. I'm scared for his health. How do I help someone who won't accept help? Have other spouses of caregivers dealt with this?",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/resources/supporting-partner-chronic-illness",
+        "https://kindred.app/resources/reducing-caregiver-burnout",
+        "https://kindred.app/community/thread-work-caregiving-balance",
+        "https://kindred.app/community/thread-emotional-support"
+      ],
+      "evaluation_criteria": [
+        "This is from the perspective of a SPOUSE of a caregiver, not the caregiver themselves—must recognize this",
+        "Should acknowledge the helplessness of watching someone burn out",
+        "Should draw on community examples of caregivers who initially resisted help then accepted it",
+        "Must NOT just list resources for the caregiver—must address what the spouse can do",
+        "Should mention that sometimes showing concrete data (hours spent, incidents) helps break through denial",
+        "Should acknowledge that the spouse cannot force change",
+        "Weak response: Lists caregiver resources. Strong response: Addresses the unique position of the spouse with specific community examples"
+      ]
+    },
+    {
+      "id": "eval-q8",
+      "category": "legal-financial-complexity",
+      "difficulty": "high",
+      "question": "My mom was diagnosed with early Alzheimer's and the doctor said to 'get affairs in order.' I'm completely lost. My siblings and I have never talked about money—it's uncomfortable. Mom has some savings but nowhere near enough for long-term care. I've heard about Medicaid but also something about a 5-year lookback that scares me. I don't know if we need a lawyer or what kind. Meanwhile I'm also trying to understand what daily care will look like as this progresses. Where do I even start? I want both the practical information AND to hear how other families actually had these conversations.",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/resources/legal-financial-planning",
+        "https://kindred.app/resources/dementia-care-daily-routines",
+        "https://kindred.app/community/thread-long-term-planning",
+        "https://kindred.app/community/thread-financial-stress"
+      ],
+      "evaluation_criteria": [
+        "Must address BOTH legal/financial planning AND daily care progression",
+        "Should reference community experiences of having difficult family conversations",
+        "Must explain the urgency of legal documents while capacity remains",
+        "Should mention elder law attorneys and why they're worth the cost",
+        "Must acknowledge the emotional difficulty of these conversations, not just the practical steps",
+        "Should reference specific community experiences from thread-long-term-planning and thread-financial-stress",
+        "Weak response: Lists legal documents. Strong response: Integrates practical steps with emotional guidance and community experiences of navigating family dynamics"
+      ]
+    },
+    {
+      "id": "eval-q9",
+      "category": "success-and-setback",
+      "difficulty": "medium",
+      "question": "I finally got my dad to try an adult day program after months of resistance. The first week was amazing—he actually seemed to enjoy it. But this week he's refusing to go again. He says the people there are 'too old' (he's 82). I'm crushed. I thought we'd turned a corner. Is this normal? Do I push through or give up? I need to hear from people who've been through this—does it get better or am I fooling myself?",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/resources/respite-care-options",
+        "https://kindred.app/community/thread-morning-routines",
+        "https://kindred.app/community/thread-caregiver-wins"
+      ],
+      "evaluation_criteria": [
+        "Must normalize the setback—progress in caregiving is rarely linear",
+        "Should reference community experiences of initial resistance followed by acceptance (mentioned in multiple threads)",
+        "Must acknowledge the emotional crash of having hope then losing it",
+        "Should NOT give false reassurance that it will definitely get better",
+        "Should discuss the tradeoff between pushing through vs. backing off",
+        "Should mention that 'too old' resistance is common and sometimes resolves with time",
+        "Weak response: 'Keep trying, it will work.' Strong response: Validates the disappointment, shares community examples of both success and ongoing struggle"
+      ]
+    },
+    {
+      "id": "eval-q10",
+      "category": "comprehensive-integration",
+      "difficulty": "very-high",
+      "question": "I need help thinking through everything at once. My mom has moderate dementia and lives with me. My marriage is strained because I have nothing left for my husband after caregiving all day. I'm not sleeping well. My sister thinks I should put Mom in a facility but she doesn't help and I resent her for having opinions from the sidelines. I've tried some of the usual advice—routines, respite, support groups—with mixed results. I don't want generic suggestions. I want to understand what resources Kindred has that address ALL of these dimensions together, and I want to hear from caregivers who've navigated this combination of pressures. Is there a path through this?",
+      "requires_community_grounding": true,
+      "expected_sources": [
+        "https://kindred.app/resources/reducing-caregiver-burnout",
+        "https://kindred.app/resources/supporting-partner-chronic-illness",
+        "https://kindred.app/resources/sleep-disturbances-caregivers",
+        "https://kindred.app/resources/dementia-care-daily-routines",
+        "https://kindred.app/community/thread-sibling-conflict",
+        "https://kindred.app/community/thread-sleep-solutions",
+        "https://kindred.app/community/thread-emotional-support"
+      ],
+      "evaluation_criteria": [
+        "Must address ALL dimensions: dementia care, marriage strain, sleep, sibling conflict",
+        "Must acknowledge that standard advice has been tried with 'mixed results'—cannot just repeat basics",
+        "Should recognize these issues are interconnected, not separate problems",
+        "Must include BOTH article resources AND community experiences",
+        "Should reference specific community examples: sibling conflict resolution, spouse caregivers, sleep strategies",
+        "Must acknowledge there may not be a clear 'path through'—only ways to make it more sustainable",
+        "Should validate the resentment toward the sister as legitimate",
+        "This is the hardest question—a strong response requires sophisticated multi-document synthesis",
+        "Weak response: Lists separate resources for each issue. Strong response: Integrates resources while acknowledging the overwhelming nature of facing everything at once"
+      ]
+    }
+  ],
+  "scoring_rubric": {
+    "levels": {
+      "excellent": {
+        "score": "4",
+        "description": "Response demonstrates deep multi-document reasoning, integrates community experiences with article guidance, acknowledges uncertainty and tradeoffs, validates emotions before advising, and includes accurate resource links. Feels like it was written by someone who understands caregiving reality."
+      },
+      "good": {
+        "score": "3",
+        "description": "Response references multiple relevant sources, addresses most parts of the question, includes some community grounding, and maintains appropriate tone. May miss some nuance or provide slightly generic advice in places."
+      },
+      "adequate": {
+        "score": "2",
+        "description": "Response provides relevant information but relies heavily on article summaries without community integration. May miss emotional validation or provide advice that ignores stated constraints. Links are present but integration is shallow."
+      },
+      "poor": {
+        "score": "1",
+        "description": "Response is generic, ignores stated constraints or prior attempts, fails to integrate multiple sources, misses emotional dimension, or provides advice that could apply to anyone. May hallucinate content not in Kindred resources."
+      }
+    },
+    "dimensions": {
+      "retrieval_accuracy": "Did the system find the most relevant documents, including community threads?",
+      "multi_document_synthesis": "Did the system integrate information across articles AND community experiences?",
+      "constraint_awareness": "Did the system acknowledge stated constraints and prior attempts, not just repeat generic advice?",
+      "emotional_grounding": "Did the system validate emotions before providing information? Does it feel compassionate?",
+      "ambiguity_handling": "Did the system acknowledge uncertainty and tradeoffs rather than false confidence?",
+      "hallucination_resistance": "Did the system avoid inventing content not present in Kindred resources?",
+      "completeness": "Did the system address all parts of multi-part questions?",
+      "deep_linking": "Did the system provide accurate URLs to referenced resources?"
+    }
+  }
+}
